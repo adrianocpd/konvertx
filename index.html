@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Conversor De Cambio Konvertx</title>
+</head>
+
+<body>
+    <img class="logo" src="./assets/loogo.gif" alt="logo-conversor-cambio">
+
+    <!-- ========== FAIXA DE COTAÇÕES EM TEMPO REAL ========== -->
+    <aside class="ticker-cotacoes" role="marquee" aria-label="Cotações de moedas em tempo real">
+        <div class="ticker-conteudo">
+            <ul class="ticker-lista">
+                <li class="ticker-item">
+                    <span class="ticker-moeda">🇺🇸 USD/BRL</span>
+                    <span class="ticker-valor" id="ticker-dolar">R$ --</span>
+                    <span class="ticker-variacao" id="ticker-dolar-var">--%</span>
+                </li>
+                <li class="ticker-item">
+                    <span class="ticker-moeda">🇪🇺 EUR/BRL</span>
+                    <span class="ticker-valor" id="ticker-euro">R$ --</span>
+                    <span class="ticker-variacao" id="ticker-euro-var">--%</span>
+                </li>
+                <li class="ticker-item">
+                    <span class="ticker-moeda">🇬🇧 GBP/BRL</span>
+                    <span class="ticker-valor" id="ticker-libra">R$ --</span>
+                    <span class="ticker-variacao" id="ticker-libra-var">--%</span>
+                </li>
+                <li class="ticker-item">
+                    <span class="ticker-moeda">₿ BTC/USD</span>
+                    <span class="ticker-valor" id="ticker-bitcoin">$ --</span>
+                    <span class="ticker-variacao" id="ticker-bitcoin-var">--%</span>
+                </li>
+            </ul>
+        </div>
+        <p class="ticker-atualizacao">
+            <small>Última atualização: <time id="ticker-horario">--:--</time></small>
+        </p>
+    </aside>
+    <!-- ========== FIM DA FAIXA DE COTAÇÕES ========== -->
+
+    <main>
+        <label>
+            Converter <b>de</b>
+            <select>
+                <option>R$ Real Brasileiro</option>
+            </select>
+        </label>
+        <label>
+            Converter <b>para</b>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+                <option value="libra">£ Libra</option>
+            </select>
+        </label>
+        <label>
+            Valor
+            <input class="input-currency" placeholder="R$ 10.000.00">
+        </label>
+        <button class="convert-button">Converter</button>
+        <section>
+            <div class="currency-box">
+                <img src="./assets/real.png" alt="real-brasileiro">
+                <p class="currency">Real</p>
+                <p class="currency-value-to-convert"><b>R$ 0.00</b></p>
+            </div>
+            <img class='arrow' src="./assets/./Vector.png" alt="seta">
+            <div class="currency-box">
+                <img class="currency-img" src="./assets/dollar.png" alt="dolar-americano">
+                <p class="currency" id="currency-name">Dólar americano</p>
+                <p class="currency-value"><b>US$ 0.00</b></p>
+            </div>
+
+
+        </section>
+        
+    </main>
+    <footer class="meu-site">
+    <p>© 2026-Desenvolvido por [Adriano C Conceição]</p>
+    <p>Projeto educacional <span class="destaque-devclub">DevClub</span></p>
+    <p>contato:(**)-****-****</p>
+</footer>
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>

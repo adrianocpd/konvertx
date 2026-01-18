@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url('./assets/fundodolita.gif');
+    /* Caminho relativo da imagem */
+    background-repeat: no-repeat;
+    /* Impede a repetição da imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir toda a área */
+    background-position: center;
+    /* Centraliza a imagem */
+    background-attachment: fixed;
+    /* Fixa a imagem ao fundo, mesmo rolando */
+}
+.logo {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+main {
+    width: 375px;
+    background: #f4f4f4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px; 
+}
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 14px;
+}
+select, input {
+    background: #f4f4f4;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+color: #555555;
+ cursor: pointer;
+}
+button {
+    background: #772fd3;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    height: 48px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}
+button:active {
+    opacity: 0.6;
+}
+section {
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow {
+    margin: 15px 0;
+}
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.currency {
+color: #777777;
+font-size: 14px;
+}
+.currency-value, .currency-value-to-convert {
+color: #555555;
+font-weight: 700;
+font-size: 20px;
+}
+.meu-site {
+    color: #555555;
+font-weight: 700;
+font-size: 20px;
+}
+/* ========== CORREÇÃO DO LAYOUT ========= */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main, .ticker-cotacoes, footer {
+    width: 375px;
+    background: rgba(244, 244, 244, 0.95);
+    border-radius: 20px;
+    padding: 20px 24px;
+    margin: 10px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    color: #555555;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* ========== FAIXA DE COTAÇÕES ========== */
+
+.ticker-cotacoes {
+    background: rgba(30, 30, 30, 0.95);
+}
+
+.ticker-lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.ticker-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: #ffffff;
+    font-size: 13px;
+    width: 45%;
+}
+
+.ticker-moeda {
+    font-weight: 700;
+    font-size: 12px;
+    color: #bbbbbb;
+}
+
+.ticker-valor {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.ticker-variacao {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.ticker-variacao.positiva {
+    background: #22c55e;
+    color: #ffffff;
+}
+
+.ticker-variacao.negativa {
+    background: #ef4444;
+    color: #ffffff;
+}
+
+.ticker-atualizacao {
+    text-align: center;
+    color: #777777;
+    margin-top: 15px;
+    font-size: 12px;
+    border-top: 1px solid #444444;
+    padding-top: 10px;
+}
+.destaque-devclub {
+    color: #d3712f;
+    font-weight: 700;
+}
